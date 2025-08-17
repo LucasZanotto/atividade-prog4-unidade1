@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Currículo web — Lucas Zanotto: Desenvolvedor Web">
+  <title>Currículo — Lucas Zanotto</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container header-inner">
+      <img src="media/foto.jpg" alt="Foto de Lucas Zanotto" class="avatar">
+      <div>
+        <h1 id="greeting">Bem‑vindo ao meu perfil!!</h1>
+        <p class="tagline">Olá, meu nome é <strong>Lucas Zanotto</strong>. Desenvolvedor Web — +3 anos de experiência.</p>
+        <nav>
+          <ul class="social-list">
+            <li><a href="https://discord.gg/ottonaz_reverse" aria-label="Discord" target="_blank">Discord</a></li>
+            <li><a href="mailto:ottonazreverse@gmail.com" aria-label="Enviar e‑mail">E‑mail</a></li>
+            <li><a href="https://api.whatsapp.com/send?phone=5549999271760" aria-label="WhatsApp" target="_blank">WhatsApp</a></li>
+            <li><a href="https://github.com/LucasZanotto" aria-label="GitHub" target="_blank">GitHub</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="container intro" id="intro">
+      <article>
+        <h2>Apresentação</h2>
+        <p>Olá, meu nome é Lucas. Sou Desenvolvedor Web há mais de 3 anos e tenho experiência em linguagens de marcação como HTML, estilização com CSS, programação com JavaScript, TypeScript e Python, e bibliotecas de Front‑End como React.js. Para testar meus códigos, uso Jest, Mocha e React Testing Library (RTL). Para o Back‑End, uso Node.js com Express. Possuo conhecimentos em bancos de dados MySQL e MongoDB e costumo trabalhar com ferramentas como Linux, Git e Postman.</p>
+        <ul>
+          <li>HTML5, CSS3, JavaScript, TypeScript</li>
+          <li>React.js, Vue, Angular, Redux</li>
+          <li>Node.js, Express, AdonisJS, NestJS</li>
+          <li>MySQL, MongoDB</li>
+          <li>Testes: Jest, Mocha, RTL</li>
+          <li>Ferramentas: Git, Linux, Postman, Insomnia</li>
+        </ul>
+      </article>
+
+      <aside class="controls" aria-label="Controles da página">
+        <label for="nomeInput">Seu nome</label>
+        <input id="nomeInput" type="text" placeholder="Digite seu nome" aria-label="Nome">
+        <button id="btnSaudacao">Enviar saudação</button>
+
+        <button id="btnToggleExp">Mostrar/Esconder Experiência</button>
+        <button id="btnBg" aria-pressed="false" aria-label="Alternar tema">Dark mode</button>
+
+        <div class="visitas" aria-live="polite">Visitas locais: <span id="visitas">0</span></div>
+      </aside>
+    </section>
+
+    <section class="container experience" id="experiencia">
+      <h2>Experiência</h2>
+      <article>
+        <h3>Projetos</h3>
+        <p>Tenho experiência em desenvolvimento de mais de 20 projetos web, utilizando as tecnologias listadas acima. Trabalho com arquitetura de APIs RESTful, padrões MSC (Model‑Service‑Controller) e aplico boas práticas como SOLID.</p>
+        <p>Projetos em destaque estão pinados no meu perfil GitHub.</p>
+      </article>
+
+      <article>
+        <h3>Principais stacks</h3>
+        <ol>
+          <li>Front‑End: React, TypeScript, CSS moderno</li>
+          <li>Back‑End: Node.js, Express, REST APIs</li>
+          <li>Banco de Dados: MySQL, MongoDB</li>
+        </ol>
+      </article>
+
+      <article class="works">
+  <h3>Trabalhos feitos</h3>
+  <p>Demo de um app que desenvolvi — aqui mostramos um trecho funcional do fluxo do produto.</p>
+
+  <div class="video-showcase">
+    <div class="device-frame">
+      <video
+        id="workVideo"
+        class="video-player"
+        controls
+        playsinline
+        controlsList="nodownload nofullscreen noremoteplayback"
+        disablePictureInPicture
+        preload="metadata"
+        poster="media/video.mp4"
+        aria-label="Vídeo demonstrativo do app">
+        <source src="media/video.mp4" type="video/mp4">
+        Seu navegador não suporta vídeo HTML5.
+      </video>
+    </div>
+
+    <div class="work-meta">
+      <p><strong>Destaques:</strong> criação, leitura, edição e remoção de posts, estilo reddit</p>
+      <a href="https://github.com/ArtMor2020/prog3-ProjetoPrincipal" class="cta" target="_blank" aria-label="Ver repositório">Ver repositório</a>
+    </div>
+  </div>
+</article>
+    </section>
+
+    <section class="container mídia" id="midia">
+      <h2>Linguagens e Ferramentas</h2>
+      <div class="tools-grid">
+        <div>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>ReactJS</li>
+            <li>Vue</li>
+            <li>Angular</li>
+            <li>Redux</li>
+            <li>Tailwind</li>
+            <li>Bootstrap</li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li>Git</li>
+            <li>Node.js</li>
+            <li>Express.js</li>
+            <li>AdonisJS</li>
+            <li>NestJS</li>
+            <li>PHP / Laravel</li>
+            <li>C# / .NET</li>
+            <li>MySQL</li>
+            <li>MongoDB</li>
+            <li>Python</li>
+          </ul>
+        </div>
+      </div>
+
+      <figure>
+        <img src="https://github-readme-stats.vercel.app/api?username=lucaszanotto&show_icons=true&locale=en" alt="estatísticas GitHub" />
+        <img src="https://github-readme-stats.vercel.app/api/top-langs?username=lucaszanotto&show_icons=true&locale=en&layout=compact" alt="linguagens mais usadas" />
+      </figure>
+    </section>
+    <section class="container contato" id="contato">
+      <h2>Conecte‑se comigo</h2>
+      <p>Se quiser entrar em contato comigo, envie um e‑mail para <a href="mailto:ottonazreverse@gmail.com">ottonazreverse@gmail.com</a> ou utilize as redes abaixo.</p>
+      <p class="social-icons">
+        <a href="https://discord.gg/ottonaz_reverse" target="_blank" aria-label="Discord"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/discord.svg" alt="Discord" height="40" width="40"></a>
+        <a href="mailto:ottonazreverse@gmail.com" aria-label="Email"><img src="https://img.icons8.com/color/48/000000/gmail.png" alt="Gmail" width="40" height="40"></a>
+        <a href="https://api.whatsapp.com/send?phone=5549999271760" target="_blank" aria-label="WhatsApp"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/600px-WhatsApp.svg.png" alt="WhatsApp" width="40" height="40"></a>
+      </p>
+
+      <form id="formContato" aria-label="Formulário de contato">
+        <div style="display:none" aria-hidden="true">
+          <label>Não preencha</label>
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off">
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="nome">Nome *</label>
+            <input id="nome" name="Nome" type="text" required placeholder="Nome">
+          </div>
+          <div class="form-group">
+            <label for="sobrenome">Sobrenome</label>
+            <input id="sobrenome" name="Sobrenome" type="text" placeholder="Sobrenome">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="emailContato">E-mail *</label>
+            <input id="emailContato" name="Email" type="email" required placeholder="seu@email.com">
+          </div>
+          <div class="form-group">
+            <label for="phone">Telefone</label>
+            <input id="phone" name="Telefone" type="tel" placeholder="(xx) xxxxx-xxxx">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="company">Empresa</label>
+          <input id="company" name="Empresa" type="text" placeholder="Empresa (opcional)">
+        </div>
+
+        <div class="form-group">
+          <label for="message">Mensagem *</label>
+          <textarea id="message" name="Mensagem" required placeholder="Escreva sua mensagem..."></textarea>
+        </div>
+
+        <div class="form-actions">
+          <button id="submitContact" type="submit">Enviar</button>
+          <span id="formSpinner" class="spinner" aria-hidden="true" hidden>Enviando…</span>
+        </div>
+
+        <div id="formMessage" class="form-message" role="status" aria-live="polite"></div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <p>&copy; <span id="ano">2025</span> — Lucas Zanotto</p>
+      <p>Publicado em: GitHub Pages / Netlify / Vercel</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

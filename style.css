@@ -1,0 +1,145 @@
+:root{
+  --bg:#f4f7fb;
+  --card:#ffffff;
+  --accent:#2b7a78;
+  --muted:#6b6b6b;
+  --radius:12px;
+  --gap:1rem;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:#222;line-height:1.45}
+.container{max-width:1100px;margin:0 auto;padding:1rem}
+
+.header-inner{display:flex;gap:1rem;align-items:center}
+.avatar{width:96px;height:96px;border-radius:50%;object-fit:cover;border:4px solid var(--card)}
+.tagline{color:var(--muted);margin:0}
+
+.social-list{list-style:none;padding:0;margin:0;display:flex;gap:.6rem}
+.social-list a{display:inline-block;padding:.4rem .6rem;border-radius:8px;text-decoration:none}
+.social-list a:hover{transform:translateY(-3px)}
+
+.intro{display:flex;gap:var(--gap);align-items:flex-start}
+.intro article{flex:1}
+.controls{width:260px;background:var(--card);padding:1rem;border-radius:var(--radius);box-shadow:0 6px 18px rgba(0,0,0,.06)}
+.controls input, .controls button{display:block;width:100%;margin:.4rem 0;padding:.55rem;border-radius:8px;border:1px solid #ddd}
+.controls button{cursor:pointer}
+.controls button:hover{filter:brightness(.98)}
+
+section{margin-top:1.25rem}
+.experience article{background:var(--card);padding:1rem;border-radius:10px;margin-bottom:.75rem}
+
+.canvas-area canvas{display:block;background:#fff;margin:0.5rem 0;border-radius:8px}
+
+.footer-inner{display:flex;justify-content:space-between;align-items:center;padding:1rem 0;color:var(--muted)}
+
+@media (max-width:800px){
+  .intro{flex-direction:column}
+  .controls{width:100%}
+  .header-inner{flex-direction:row}
+  .footer-inner{flex-direction:column;gap:.5rem}
+}
+
+.video-player{
+  width:720px;    
+  max-width:100%;   
+  height:auto;
+  max-height:70vh;  
+  border-radius:8px;
+  box-shadow:0 12px 30px rgba(0,0,0,0.12);
+}
+
+:root{
+  --bg: #f4f7fb;
+  --card: #ffffff;
+  --text: #222222;
+  --accent: #2b7a78;
+  --muted: #6b6b6b;
+  --invert: #fff;
+  transition: none;
+}
+
+html, body {
+  background: var(--bg);
+  color: var(--text);
+  transition: background .28s ease, color .28s ease;
+}
+
+:root[data-theme="dark"],
+html[data-theme="dark"] {
+  --bg: #071019;        
+  --card: #0b1318;       
+  --text: #e6eef2;       
+  --accent: #57d2c3;     
+  --muted: #93a0a8;      
+  --invert: #071019;
+}
+
+.controls, .tech-item, .experience article, .modal-content, .video-player {
+  background: var(--card);
+  color: var(--text);
+}
+
+.controls button, .play-btn, .cta {
+  background: var(--accent);
+  color: var(--invert);
+  border: none;
+}
+
+* { transition: background-color .22s ease, color .22s ease, border-color .22s ease; }
+
+.contact-wrapper{display:flex;gap:1.25rem;align-items:flex-start}
+.contact-left{flex:1}
+.contact-right{width:300px;background:var(--card);padding:1rem;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,.05)}
+.form-row{display:flex;gap:0.75rem}
+.form-group{flex:1;display:flex;flex-direction:column;margin-bottom:.75rem}
+.form-group label{font-size:.95rem;margin-bottom:.25rem}
+.form-group input, .form-group textarea{
+  padding:.6rem;border-radius:8px;border:1px solid #ddd;font-size:1rem;
+  background:transparent;
+}
+.form-group textarea{min-height:120px;resize:vertical}
+.form-actions{display:flex;gap:.75rem;align-items:center;margin-top:.5rem}
+#submitContact{padding:.6rem 1rem;border-radius:8px;border:none;background:var(--accent);color:var(--invert);cursor:pointer}
+#submitContact[disabled]{opacity:.6;cursor:progress}
+.form-message{margin-top:.6rem;color:var(--muted)}
+
+.spinner{font-size:.95rem;color:var(--muted)}
+
+@media (max-width:900px){
+  .contact-wrapper{flex-direction:column}
+  .contact-right{width:100%}
+}
+
+input, textarea, select, .controls input, .controls button {
+  background: var(--card);    
+  color: var(--text);         
+  border: 1px solid rgba(0,0,0,0.08);
+  padding: .6rem;
+  border-radius: 8px;
+  outline: none;
+  transition: background .22s ease, color .22s ease, border-color .22s ease;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--muted);
+  opacity: 1;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: var(--accent);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+input[disabled], textarea[disabled] {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px var(--card) inset !important;
+  -webkit-text-fill-color: var(--text) !important;
+}
